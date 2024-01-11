@@ -1,0 +1,41 @@
+/* nav button =============================================== */
+.button {
+
+    display: inline-flex;
+    align-items: center;
+
+    background-color: var(--additional-back-color);
+    transition: background-color .3s linear;
+
+    color: var(--main-button-color);
+    text-decoration: none;
+
+    box-sizing: border-box;
+    padding: 14px 30px;
+
+    border-radius: 14px;
+
+    border: none;
+    cursor: pointer;
+
+}
+
+/* active =================================================== */
+.active,
+.button:hover {
+    background-color: var(--active-color);
+    color: var(--additional-back-color);
+}
+
+/* after nav button ========================================= */
+.button > span {
+    color: var(--active-color);
+
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.button:hover > span,
+.active > span {
+    color: var(--additional-back-color);
+}

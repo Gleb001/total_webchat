@@ -1,0 +1,13 @@
+/* nav  ===================================================== */
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 1 70%;
+    
+}
+.nav > a:not(:last-child) {
+    margin-right: 20px;
+}

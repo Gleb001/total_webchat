@@ -1,0 +1,19 @@
+/* imports ================================================== */
+/* normalize ------------------------------------------------ */
+@import url("./normalize/index.css");
+/* constants ------------------------------------------------ */
+@import url("./constants/colors.css");
+/* icons ---------------------------------------------------- */
+@import url("./icons/index.css");
+
+/* main ===================================================== */
+body {
+
+    font-size: 16px;
+    color: var(--main-text-color);
+
+    background-color: var(--main-back-color);
+
+    margin-bottom: 110px;
+
+}

@@ -1,0 +1,15 @@
+.select {
+
+    cursor: pointer;
+
+    background-color: var(--additional-back-color);
+    color: var(--additional-color);
+
+    box-sizing: border-box;
+    padding: 14px 20px;
+
+    border-radius: 15px 15px 0 0;
+
+    border: none;
+
+}

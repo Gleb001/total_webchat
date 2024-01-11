@@ -1,0 +1,27 @@
+/* button show password ===================================== */
+.button_show_password {
+
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    background-color: var(--main-back-color);
+
+    color: var(--main-title-color);
+
+    transition: border-color .1s linear;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+.button_show_password:hover {
+    background-color: var(--additional-back-color);
+}
+
+.button_show_password > img {
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,15 @@
+:root {
+
+    /* background colors */
+    --main-back-color: white;
+    --additional-back-color: #212326;
+
+    /* text colors */
+    --main-title-color: black;
+    --main-text-color: #4E4E4E;
+    --main-button-color: #808080;
+
+    --additional-color: #808080;
+    --active-color: #29DF63;
+
+}
