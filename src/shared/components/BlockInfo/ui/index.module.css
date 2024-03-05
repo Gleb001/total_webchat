@@ -1,0 +1,44 @@
+/* main ===================================================== */
+.block_info {
+
+    border-radius: 15px;
+    height: 100%;
+
+    overflow-y: scroll;
+
+    background-color: var(--back-color);
+
+    box-sizing: border-box;
+    padding: 5px 25px;
+
+    text-align: justify;
+
+}
+
+/* headers in block info ==================================== */
+.block_info h1 {
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+    margin: 20px 0;
+
+}
+.block_info h2 {
+
+    font-size: 1em;
+    font-weight: bold;
+
+    margin: 15px 0;
+
+}
+.block_info h3 {
+    margin: 10px 0;
+}
+
+/* text in block info ======================================= */
+.block_info p,
+.block_info span {
+    margin: 10px 0;
+    text-indent: 1em;
+}

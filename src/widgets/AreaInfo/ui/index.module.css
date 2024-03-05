@@ -1,0 +1,12 @@
+.area_info {
+
+    height: 100%;
+    flex: 0 1 45%;
+    
+    background-color: var(--additional-back-color);
+    color: var(--text-color);
+
+    box-sizing: border-box;
+    padding: 40px 65px;
+
+}

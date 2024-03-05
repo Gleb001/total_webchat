@@ -1,0 +1,33 @@
+/* area input */
+.area_input {
+
+    height: 100%;
+    flex: 0 1 55%;
+
+    background-color: var(--back-color);
+    color: var(--text-color);
+
+    box-sizing: border-box;
+    padding: 40px 65px;
+
+}
+
+/* logo */
+.logo {
+
+    font-size: 1.25em;
+
+    display: flex;
+    align-items: center;
+
+    margin: 20px 0;
+
+}
+.logo > span {
+
+    padding-left: 10px;
+
+    font-size: 1.35em;
+    color: var(--active-color);
+
+}

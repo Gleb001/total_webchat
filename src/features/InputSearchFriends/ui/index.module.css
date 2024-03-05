@@ -1,0 +1,53 @@
+/* main ===================================================== */
+.search_friends {
+
+    border: 1px solid var(--main-title-color);
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    display: flex;
+    width: 100%;
+
+}
+
+.input_search {
+
+    box-sizing: border-box;
+    padding-left: 15px;
+
+    border: none;
+    outline: none;
+    
+    display: block;
+    width: 100%;
+
+}
+
+
+/* button search ============================================ */
+.button_search {
+
+    box-sizing: border-box;
+    padding: 15px;
+
+    background-color: var(--main-button-color);
+    color: var(--main-title-color);
+
+    border-radius: 0 10px 10px 0;
+
+    transition: background-color .15s linear;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+}
+
+.button_search:hover {
+
+    background-color: var(--active-color);
+    color: var(--main-title-color);
+
+}

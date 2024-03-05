@@ -1,0 +1,13 @@
+.form_container {
+
+    display: inline-block;
+    width: 100%;
+
+}
+
+.name_form {
+
+    display: inline-block;
+    margin: 10px 0;
+    
+}

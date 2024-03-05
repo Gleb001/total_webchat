@@ -1,0 +1,31 @@
+/* profile picture */
+.profile_picture {
+
+    display: block;
+    width: 250px;
+    height: 250px;
+
+    margin: 15px auto;
+
+    border-radius: 50%;
+
+}
+
+/* username */
+.username {
+
+    color: black;
+
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.bio {
+
+    text-align: center;
+    margin: 0 auto;
+
+    color: rgb(73, 73, 73);
+
+}

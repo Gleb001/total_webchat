@@ -3,17 +3,18 @@
 @import url("./normalize/index.css");
 /* constants ------------------------------------------------ */
 @import url("./constants/colors.css");
-/* icons ---------------------------------------------------- */
-@import url("./icons/index.css");
+/* d */
+@import url("./icons/icon_1/index.css");
 
 /* main ===================================================== */
+html {
+    height: 100%;
+}
 body {
 
     font-size: 16px;
-    color: var(--main-text-color);
+    color: var(--text-color);
 
-    background-color: var(--main-back-color);
-
-    margin-bottom: 110px;
+    height: 100%;
 
 }

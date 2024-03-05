@@ -1,0 +1,43 @@
+/* submit element in form =================================== */
+.button {
+
+    box-sizing: border-box;
+    padding: 15px 50px;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+
+    border-radius: 15px;
+
+    outline: none;
+    border: none;
+
+}
+
+.button_submit {
+
+    background-color: var(--active-color);
+    color: var(--text-color);
+
+    cursor: pointer;
+
+    transition: background-color .3s linear;
+
+}
+.button_submit:hover {
+    background-color: var(--additional-back-color);
+}
+
+/* wait submit ============================================== */
+.wait_button_submit {
+
+    background-color: var(--additional-back-color);
+    color: var(--spec-back-color);
+
+}
+    

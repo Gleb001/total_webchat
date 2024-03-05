@@ -5,9 +5,7 @@ import { NextRequest } from "next/server";
 // constants ================================================ //
 const allowedRoutes = new Set(
     [
-        "/home/login",
-        "/home/signin",
-        "/home/about"
+        "/"
     ]
 );
 const serviceRoutes = [
@@ -43,7 +41,7 @@ function middleware(request: NextRequest) {
         return NextResponse.next();
     } else {
         return NextResponse.redirect(
-            new URL("/home/signin", request.url)
+            new URL("/", request.url)
         );
     }
 

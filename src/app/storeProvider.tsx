@@ -5,7 +5,6 @@ import type { ReactNode } from "react";
 import { useRef } from "react";
 import { Provider } from "react-redux";
 import makeStore, { AppStore } from "@/shared/libs/store";
-import { getCookie } from "cookies-next";
 
 // types ===================================================== //
 interface Props {

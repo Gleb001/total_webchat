@@ -1,4 +1,8 @@
+// imports =================================================== //
+import WelcomePage from "@/pages/WelcomePage";
+
 // main ====================================================== //
-export default function App() {
-  return(<></>);
-}
+const WelcomePageHome = () => <WelcomePage />;
+
+// exports ================================================== //
+export default WelcomePageHome;

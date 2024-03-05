@@ -4,14 +4,12 @@ import type { PayloadAction } from '@reduxjs/toolkit/react';
 
 // types ==================================================== //
 interface initialState {
-    id: string | null,
-    email: string | null,
+    id: number | null,
 }
 
 // constants ================================================ //
 const initialState: initialState = {
     id: null,
-    email: null,
 };
 
 // main ===================================================== //
@@ -20,13 +18,11 @@ const userSlice = createSlice({
     initialState,
     reducers: {
         set: (state, action: PayloadAction<initialState>) => {
-            let { id, email } = action.payload;
-            state.id = id;
-            state.email = email;
+            state.id = action.payload.id;
         }
     }
 });
 
 // exports ================================================== //
 export const { set } = userSlice.actions;
-export { userSlice };
+export default userSlice;

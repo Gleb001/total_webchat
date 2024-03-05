@@ -1,0 +1,11 @@
+.special_ball {
+
+    border-radius: 50%;
+    background-color: var(--prev-active-color);
+
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+
+}

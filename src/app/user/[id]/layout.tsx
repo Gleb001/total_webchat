@@ -1,32 +1,20 @@
-// import =================================================== //
-import UserNav from '@/widgets/nav/user';
-import type { Metadata } from 'next';
-import type { ReactNode } from "react"; 
+// imports ================================================== //
+import UserAccountPage from "@/pages/UserAccountPage";
+import type { ReactNode } from "react";
 
 // types ==================================================== //
 interface Props {
-  children: ReactNode
-}
-
-// constants ================================================ //
-const metadata: Metadata = {
-  title: 'Profile',
+    children: ReactNode
 }
 
 // main ===================================================== //
-function RootLayout ({ children }: Props) {
+function TemplateUser({ children }: Props) {
 
-  return (
-    <html lang="en">
-      <body>
-        {children}
-        <UserNav />
-      </body>
-    </html>
-  );
+    return (
+        <UserAccountPage />
+    );
 
-}
+};
 
 // exports ================================================== //
-export default RootLayout;
-export { metadata };
+export default TemplateUser;

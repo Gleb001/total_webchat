@@ -9,6 +9,8 @@
     box-sizing: border-box;
     padding: 80px 0 30px;
 
+    gap: 30px;
+
 }
 
 /* title ==================================================== */
@@ -28,5 +30,7 @@
     align-items: center;
 
     justify-content: space-between;
+
+    width: 100%;
 
 }

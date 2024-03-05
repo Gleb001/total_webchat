@@ -1,0 +1,76 @@
+/* main */
+.modal_window {
+
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+
+    overflow: hidden;
+
+}
+
+
+/* header */
+.modal_window header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--back-color);
+    border-bottom: 1px solid var(--border-color);
+
+    box-sizing: border-box;
+    padding: 10px 15px 10px 20px;
+
+}
+
+/* info */
+.info {
+
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+
+    gap: 12.5px;
+
+}
+
+/* nav buttons */
+.nav_buttons {
+
+    display: flex;
+    gap: 5px;
+
+}
+.nav_buttons > button {
+
+    height: 100%;
+
+    box-sizing: border-box;
+
+}
+
+/* title */
+.title {
+    font-size: 1.1em;
+}
+
+
+
+
+/* main */
+.modal_window main {
+
+    background-color: var(--spec-spec-back-color);
+
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+}

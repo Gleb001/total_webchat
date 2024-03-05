@@ -1,0 +1,12 @@
+.title_input {
+
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    
+    box-sizing: border-box;
+    padding: 0 6px;
+
+    background-color: var(--back-color);
+
+}

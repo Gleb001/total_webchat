@@ -1,7 +1,8 @@
 // imports ================================================== //
 import { configureStore } from "@reduxjs/toolkit";
-import { userSlice } from "./slices/UserSlice";
+import UserSlice from "./slices/UserSlice";
 import AuthSlice from "./slices/AuthSlice";
+import ModalWindowsSlice from "./slices/ModalWindowsSlice";
 
 // types ==================================================== //
 type AppStore = ReturnType<typeof makeStore>;
@@ -11,8 +12,9 @@ type AppDispatch = AppStore["dispatch"];
 // main ===================================================== //
 const makeStore = () => configureStore({
     reducer: {
-        [userSlice.name]: userSlice.reducer,
-        [AuthSlice.name]: AuthSlice.reducer
+        [UserSlice.name]: UserSlice.reducer,
+        [AuthSlice.name]: AuthSlice.reducer,
+        [ModalWindowsSlice.name]: ModalWindowsSlice.reducer
     }
 });
 

@@ -1,15 +1,23 @@
 :root {
 
     /* background colors */
-    --main-back-color: white;
-    --additional-back-color: #212326;
+    --back-color: white;
+    --additional-back-color: #E7EFEA;
+    --spec-back-color: #969696;
+    --spec-spec-back-color: #e6e6e6;
+
+    /* border colors */
+    --border-color: #DCECE2;
+
+    /* special colors */
+    --prev-active-color: #63EA96;
+    --active-color: #29DF63;
+    --dark-active-color: #24C256;
+    --spec-color: #3d3d3d;
+    --invalid-color: red;
 
     /* text colors */
-    --main-title-color: black;
-    --main-text-color: #4E4E4E;
-    --main-button-color: #808080;
-
-    --additional-color: #808080;
-    --active-color: #29DF63;
+    --text-color: black;
+    --additional-text-color: #969696;
 
 }

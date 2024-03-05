@@ -1,0 +1,13 @@
+.incorrect_filling_hint {
+
+    margin: 5px 0 0;
+    background-color: var(--additional-back-color);
+
+    box-sizing: border-box;
+    padding: 15px;
+
+    font-size: .8em;
+
+    border-radius: 0 15px 15px 15px;
+
+}

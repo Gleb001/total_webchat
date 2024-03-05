@@ -1,0 +1,52 @@
+.anima {
+    background: var(--back-color);
+    animation: animation_blur .5s linear forwards reverse;
+}
+
+@keyframes animation_blur {
+
+    0% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 1000%);
+    }
+
+    10% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 800%);
+    }
+
+    20% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 600%);
+    }
+
+    30% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 400%);
+    }
+
+    40% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 200%);
+    }
+
+    50% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 100%);
+    }
+
+    60% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 80%);
+    }
+
+    75% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 60%);
+    }
+
+    80% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 40%);
+    }
+
+    90% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 10%);
+    }
+
+    100% {
+        background: radial-gradient(circle at center, var(--back-color) 0, var(--prev-active-color) 0%);
+    }
+
+}

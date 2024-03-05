@@ -1,11 +1,18 @@
 // imports =================================================== //
-import Profile from "@/widgets/main/profile";
+import type { ReactNode } from "react";
+
+// types ===================================================== //
+interface Props {
+  children: ReactNode
+}
 
 // main ====================================================== //
-function UserAccountPage() {
+function UserAccountPage({ children }: Props) {
 
   return (
-    <Profile></Profile>
+    <>
+      User
+    </>
   );
 
 }

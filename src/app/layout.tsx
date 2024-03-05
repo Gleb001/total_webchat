@@ -3,26 +3,31 @@ import type { Metadata } from 'next';
 import "@/shared/ui/index.css";
 import { Inter } from "next/font/google";
 import StoreProvider from './storeProvider';
+import { ReactNode } from 'react';
+
+// types ==================================================== //
+interface Props {
+  children: ReactNode
+}
 
 // constants ================================================ //
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin', 'cyrillic'],
   weight: "400"
-})
-export const metadata: Metadata = {
+});
+const metadata: Metadata = {
   title: 'WebChat',
 }
 
 // main ===================================================== //
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <head>
+        <link rel="shortcut icon" href="../../static/favicon.ico" />
+      </head>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <StoreProvider>
           {children}
         </StoreProvider>
@@ -30,3 +35,7 @@ export default function RootLayout({
     </html>
   )
 }
+
+// exports ================================================== //
+export default RootLayout;
+export { metadata };

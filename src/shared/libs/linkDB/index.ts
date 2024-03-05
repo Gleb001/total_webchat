@@ -16,7 +16,12 @@ const DATA_BASE = mysql({
 // main ===================================================== //
 export const executeQuery: ExecuteQuery = async function ({ query, values }) {
     try {
-        const result = await DATA_BASE.query(query, values);
+        let result;
+        if (values) {
+            result = await DATA_BASE.query(query, values);
+        } else {
+            result = await DATA_BASE.query(query);
+        }
         await DATA_BASE.end();
         return result;
     } catch (error) {

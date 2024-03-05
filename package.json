@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^2.0.1",
     "cookies-next": "^4.1.0",
     "jsonwebtoken": "^9.0.2",
+    "moveton": "^1.0.7",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18",

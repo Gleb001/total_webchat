@@ -1,0 +1,25 @@
+.user_nav_button {
+
+    width: 100%;
+
+    background: var(--back-color);
+    /* background: radial-gradient(circle at center, var(--border-color) 0, var(--back-color) 60%); */
+    border: none;
+
+    color: var(--additional-text-color);
+    font-size: .75em;
+
+    box-sizing: border-box;
+    padding: 15px 10px;
+
+    cursor: pointer;
+
+}
+
+.user_nav_button:hover,
+.is_active {
+
+    background: var(--prev-active-color);
+    color: var(--text-color);
+
+}

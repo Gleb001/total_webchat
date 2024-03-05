@@ -3,7 +3,7 @@ import styles from "./ui/index.module.css";
 import type { Header as HeaderType } from "./types/index";
 
 // main ===================================================== //
-export const Header: HeaderType = ({ title, children }) => {
+const Header: HeaderType = ({ title, children }) => {
     return (
         <header className={styles.header}>
             <h1 className={styles.title}>{ title }</h1>
@@ -11,3 +11,6 @@ export const Header: HeaderType = ({ title, children }) => {
         </header>
     );
 };
+
+// exports ================================================== //
+export default Header;

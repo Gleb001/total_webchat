@@ -1,19 +1,19 @@
 // imports ================================================== //
-import { getUserData } from "./helpers/getUserData";
-import { getUserId } from "./helpers/getUserId";
+import { verifyToken } from "@/shared/libs/jwt_token/verifyToken";
+import { getUserDataById } from "./helpers/getUserDataById";
 import { NextRequest } from "next/server";
 
 // main ===================================================== //
 export async function GET(request: NextRequest) {
     try {
 
-        const token = request.cookies.get("token")?.value;
+        const dataFromToken = verifyToken(request);
 
         let userData = {};
-        if (token) {
-            const userId = getUserId(token);
-            if (userId) {
-                userData = await getUserData(userId);
+        if (dataFromToken) {
+            const data = await getUserDataById(dataFromToken.userId);
+            if (data) {
+                userData = data;
             }
         }
 

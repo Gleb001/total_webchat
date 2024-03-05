@@ -1,0 +1,14 @@
+.modal_windows {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.modal_windows > div {
+    height: 100%;
+}

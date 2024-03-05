@@ -1,0 +1,18 @@
+.dividing_line {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: grab;
+    width: 10px;
+
+    text-align: center;
+
+}
+
+.dividing_line:hover {
+
+
+
+}

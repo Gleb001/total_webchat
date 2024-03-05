@@ -3,28 +3,31 @@
 
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 
     background-color: var(--additional-back-color);
-    transition: background-color .3s linear;
 
-    color: var(--main-button-color);
+    color: var(--text-color);
     text-decoration: none;
+    text-align: center;
 
     box-sizing: border-box;
     padding: 14px 30px;
 
     border-radius: 14px;
+    border: 1px solid transparent;
 
-    border: none;
     cursor: pointer;
+
+    transition: border-color .3s linear;
+
 
 }
 
 /* active =================================================== */
 .active,
 .button:hover {
-    background-color: var(--active-color);
-    color: var(--additional-back-color);
+    border-color: var(--spec-back-color);
 }
 
 /* after nav button ========================================= */

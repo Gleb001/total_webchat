@@ -1,0 +1,53 @@
+/* input info ===============================================  */
+.input_info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+    gap: 20px;
+
+}
+
+.container_content {
+    height: 85%;
+}
+
+/* navigation by content ==================================== */
+.nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 15px 0;
+
+}
+
+/* navigation buttons --------------------------------------- */
+.nav > button {
+
+    border: none;
+    outline: none;
+
+    padding: 0;
+
+    background-color: transparent;
+
+}
+
+/* not class (active_nav_button) ---------------------------- */
+.nav > button:not(.active_nav_button) {
+    cursor: pointer;
+}
+.nav > button:not(.active_nav_button):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--additional-text-color);
+    -moz-text-decoration-color: var(--additional-text-color);
+}
+
+/* active nav button ---------------------------------------- */
+.active_nav_button {
+    text-decoration: underline;
+}

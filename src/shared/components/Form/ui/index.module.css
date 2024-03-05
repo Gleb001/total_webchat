@@ -1,22 +1,25 @@
 /* form ===================================================== */
 .form {
-    margin: 25px 0;
-}
-
-/* input form without class attribute ======================= */
-.form * {
-    border-radius: 15px;
+    margin: 25px 0 10px;
 }
 
 /* submit element in form =================================== */
 .form *:not([class])[type="submit"] {
 
     box-sizing: border-box;
-    padding: 15px 40px;
+    padding: 15px 50px;
     margin-top: 5px;
 
-    background-color: var(--additional-back-color);
-    color: var(--active-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+
+    background-color: var(--active-color);
+    color: var(--text-color);
+    border-radius: 15px;
 
     outline: none;
     border: none;
@@ -27,13 +30,5 @@
 
 }
 .form *:not([class])[type="submit"]:hover {
-
-    background-color: var(--active-color);
-    color: var(--additional-back-color);
-
-}
-
-/* label inputs in form ==================================== */
-.form label {
-    margin: 10px 0;
+    background-color: var(--additional-back-color);
 }

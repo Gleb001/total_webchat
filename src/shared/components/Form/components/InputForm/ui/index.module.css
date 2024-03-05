@@ -1,0 +1,42 @@
+/* container input ========================================== */
+.input_container {
+
+    width: 100%;
+
+    display: inline-block;
+    margin: 10px 0;
+
+}
+
+/* label ==================================================== */
+.label {
+    
+    width: 100%;
+    height: 55px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 2px 10px 2px 21px;
+
+    position: relative;
+
+    border: 1px solid var(--additional-text-color);
+    border-radius: 15px;
+
+    cursor: pointer;
+
+}
+
+/* statuses ------------------------------------------------- */
+.invalid {
+    border-color: var(--invalid-color);
+}
+.valid {
+    border-color: var(--active-color);
+}
+.active {
+    border-color: var(--text-color);
+}
